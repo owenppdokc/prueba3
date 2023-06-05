@@ -5,35 +5,36 @@ secuencia de Fibonacci hasta ese número.
  - Utilizar ciclos para calcular los términos de la secuencia.
  - Utilizar una bifurcación para manejar el caso de un número negativo*/
 #include <iostream>
+using namespace std;
 void secuenciafibonacci(int n) {
     int a = 0;
     int b = 1;
     
    
     if (n < 0) {
-        std::cout << "Error: El numero ingresado debe ser positivo." << std::endl;
+        cout << "Error: El numero ingresado debe ser positivo." << std::endl;
         return;
     }
     
  
-    std::cout << "Secuencia de Fibonacci hasta " << n << ":" << std::endl;
+    cout << "Secuencia de Fibonacci hasta " << n << ":" << std::endl;
     
     for (int i = 0; i < n; ++i) {
-        std::cout << a << " ";
+       cout << a << " ";
         
         int temp = a;   
         a = b;
         b = temp + b;
     }
     
-    std::cout << std::endl;
+    cout << std::endl;
 }
 
 int main() {
     int numero;
     
-    std::cout << "Ingrese un numero entero: ";
-    std::cin >> numero;
+   cout << "Ingrese un numero entero: ";
+   cin >> numero;
     
     secuenciafibonacci(numero);
     
