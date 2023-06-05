@@ -19,22 +19,22 @@ int calcularSuma(int arr[], int size) {
 
 int main() {
     int size;
-    std::cout << "Ingrese el tamano del arreglo: ";
-    std::cin >> size;
+    cout << "Ingrese el tamano del arreglo: ";
+    cin >> size;
 
     if (size <= 0) {
-        std::cout << "El arreglo esta vacio." << std::endl;
+        cout << "El arreglo esta vacio." << std::endl;
         return 0;
     }
 
     int arreglo[size];
-    std::cout << "Ingrese los elementos del arreglo: ";
+    cout << "Ingrese los elementos del arreglo: ";
     for (int i = 0; i < size; i++) {
-        std::cin >> arreglo[i];
+        cin >> arreglo[i];
     }
 
     int suma = calcularSuma(arreglo, size);
-    std::cout << "La suma de los elementos del arreglo es: " << suma << std::endl;
+    cout << "La suma de los elementos del arreglo es: " << suma << std::endl;
 
     return 0;
 }
